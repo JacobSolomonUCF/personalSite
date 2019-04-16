@@ -4,9 +4,9 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import LaptopMac from "@material-ui/icons/LaptopMac";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import Build from "@material-ui/icons/Build";
 // core components
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -17,7 +17,7 @@ import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 import NavPills from "../../components/NavPills/NavPills.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
 
-import profile from "../../assets/img/black&white.jpeg";
+import profile from "../../assets/img/color.jpg";
 
 import studio1 from "../../assets/img/examples/studio-1.jpg";
 import studio2 from "../../assets/img/examples/studio-2.jpg";
@@ -49,8 +49,8 @@ class ProfilePage extends React.Component {
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 200,
-            color: "white"
+            height: '0.55',
+            color: "primary"
           }}
           {...rest}
         />
@@ -67,14 +67,17 @@ class ProfilePage extends React.Component {
                     <div className={classes.name}>
                       <h3 className={classes.title}>Jacob Solomon</h3>
                       <h6>FULL STACK DEVELOPER</h6>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-twitter"} />
+                      <Button justIcon link
+                              className={`${classes.margin5} ${classes.hover}`}
+                              href="https://github.com/JacobSolomonUCF"
+                      >
+                        <i className={`fab fa-github ${classes.hover}`} />
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-instagram"} />
-                      </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-facebook"} />
+                      <Button justIcon link
+                              className={`${classes.margin5} ${classes.hover}`}
+                              href="https://www.linkedin.com/in/jacob-solomon-a81a7912b/"
+                      >
+                        <i className={"fab fa-linkedin-in"} />
                       </Button>
                     </div>
                   </div>
@@ -82,10 +85,8 @@ class ProfilePage extends React.Component {
               </GridContainer>
               <div className={classes.description}>
                 <p>
-                  An artist of considerable range, Chet Faker — the name taken
-                  by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure.{" "}
+                    Hi! I'm a Web Developer for Siemens Energy based out of Orlando, Florida.
+                    I focus on solving complex problems using the top technical solutions.{" "}
                 </p>
               </div>
               <GridContainer justify="center">
@@ -95,8 +96,8 @@ class ProfilePage extends React.Component {
                     color="primary"
                     tabs={[
                       {
-                        tabButton: "Studio",
-                        tabIcon: Camera,
+                        tabButton: "Projects",
+                        tabIcon: LaptopMac,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
@@ -127,8 +128,8 @@ class ProfilePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Work",
-                        tabIcon: Palette,
+                        tabButton: "Experience",
+                        tabIcon: Build,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
@@ -164,8 +165,8 @@ class ProfilePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Favorite",
-                        tabIcon: Favorite,
+                        tabButton: "About",
+                        tabIcon: AccountCircle,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>

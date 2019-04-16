@@ -28,7 +28,7 @@ const parallaxStyle = {
     }
   },
   small: {
-    height: "60vh"
+    height: "65vh"
   }
 };
 

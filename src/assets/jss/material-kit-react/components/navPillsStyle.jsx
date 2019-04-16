@@ -34,15 +34,14 @@ const navPillsStyle = theme => ({
     position: "relative",
     display: "block",
     borderRadius: "30px",
-    minWidth: "100px",
     textAlign: "center",
     transition: "all .3s",
     padding: "10px 15px",
     color: "#555555",
     height: "auto",
     opacity: "1",
-    maxWidth: "100%",
-    margin: "0 5px"
+    width: "26%",
+    margin: "0 5px",
   },
   pillsWithIcons: {
     borderRadius: "4px"
@@ -81,7 +80,7 @@ const navPillsStyle = theme => ({
       color: "#FFFFFF",
       backgroundColor: primaryColor,
       boxShadow:
-        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4)"
+        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(61, 90, 128, 0.4)"
     }
   },
   info: {

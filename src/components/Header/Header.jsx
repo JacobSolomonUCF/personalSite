@@ -36,7 +36,9 @@ class Header extends React.Component {
   headerColorChange() {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > changeColorOnScroll.height) {
+    console.log('HERE');
+    console.log(document.documentElement.clientHeight * changeColorOnScroll.height);
+    if (windowsScrollTop > document.documentElement.clientHeight * changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[color]);
@@ -150,7 +152,7 @@ Header.propTypes = {
   // changeColorOnScroll.height change it back to
   // this.props.color (see above)
   changeColorOnScroll: PropTypes.shape({
-    height: PropTypes.number.isRequired,
+    height: PropTypes.string.isRequired,
     color: PropTypes.oneOf([
       "primary",
       "info",

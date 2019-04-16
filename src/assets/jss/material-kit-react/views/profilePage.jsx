@@ -1,9 +1,15 @@
-import { container, title } from "../../../../assets/jss/material-kit-react.jsx";
+import { container, title, primaryColor } from "../../../../assets/jss/material-kit-react.jsx";
 
 import imagesStyle from "../../../../assets/jss/material-kit-react/imagesStyles.jsx";
 
 const profilePageStyle = {
   container,
+  hover:{
+    "&:hover":{
+      color: primaryColor,
+      transition: 'all .3s ease-in',
+    }
+  },
   profile: {
     textAlign: "center",
     "& img": {
