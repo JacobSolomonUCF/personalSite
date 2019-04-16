@@ -1,0 +1,46 @@
+{
+  "projects": {
+
+  },
+  "experience": [
+    {
+      "company": "Publix Supermarkets",
+      "title": "Grocery Replenishment Specialist",
+      "start_date": "October 2011",
+      "end_date": "January 2017",
+      "task": [
+        "Analyzed stock orders to manage inventory levels",
+        "Helped with weekly sales forecasting and display planning",
+        "Was responsible for training new employees"
+      ]
+    },
+    {
+      "company": "Siemens Energy",
+      "title": "Data Analyst",
+      "start_date": "January 2017",
+      "end_date": "March 2018",
+      "task": [
+        "Created custom interactive Tableau workbooks leveraging multiple database connections",
+        "Developed & maintained regional SharePoint site",
+        "Was responsible for IAM management for regional resources"
+      ]
+    },
+    {
+      "company": "Publix Supermarkets",
+      "title": "Full Stack Developer",
+      "start_date": "March 2018",
+      "end_date": "Present",
+      "task": [
+        "Developed multiple B2B applications using EmberJS/Flask",
+        "Helped architect & implement various microservices consumed by a suite of applications",
+        "Reduced infrastructure cost by leveraging the latest in serverless technology",
+        "Participated in IAM Administration and customer onboarding for the suite"
+      ]
+    }
+  ],
+  "about": {
+    "github": "https://github.com/JacobSolomonUCF",
+    "linkedin": "https://www.linkedin.com/in/jacob-solomon-a81a7912b/"
+
+  }
+}
