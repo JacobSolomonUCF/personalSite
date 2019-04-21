@@ -10,7 +10,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 // core components
 import Button from "../../components/CustomButtons/Button.jsx";
 
-import headerLinksStyle from "../../assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import headerLinksStyle from "../../assets/styles/components/headerLinksStyle.jsx";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
@@ -35,7 +36,6 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-facebook"
           title="Connect on LinkedIn"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
@@ -47,6 +47,22 @@ function HeaderLinks({ ...props }) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-linkedin-in"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+            title="Download my Resume"
+            placement={window.innerWidth > 959 ? "top" : "left"}
+            classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+              color="transparent"
+              href="https://drive.google.com/open?id=1stfgG6nzSzRSukMr1nzPgDObWWiJDEvM"
+              target="_blank"
+              className={classes.navLink}
+          >
+            <FontAwesomeIcon className={classes.socialIcons} icon='file' />
           </Button>
         </Tooltip>
       </ListItem>

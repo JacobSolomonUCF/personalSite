@@ -1,102 +1,81 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Grid from '@material-ui/core/Grid';
+import graduation from "../../assets/img/graduation.jpg";
+import outdoors from "../../assets/img/outdoors.jpg";
 
 const styles = theme => ({
-    root: {
-        width: '100%',
-    },
-    heading: {
-        fontSize: theme.typography.pxToRem(15),
-        flexBasis: '33.33%',
-        flexShrink: 0,
-    },
-    secondaryHeading: {
-        fontSize: theme.typography.pxToRem(15),
-        color: theme.palette.text.secondary,
-    },
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+  row:{
+    padding: '15px 0px',
+  },
+  img:{
+    height: '300px',
+    borderRadius: "5px",
+  },
+  text:{
+
+  },
+  flex:{
+    display: 'flex',
+    alignItems: 'center',
+  },
 });
 
-class About extends React.Component {
-    state = {
-        expanded: null,
-    };
+function About(props) {
+  const { classes, items } = props;
 
-    handleChange = panel => (event, expanded) => {
-        this.setState({
-            expanded: expanded ? panel : false,
-        });
-    };
-
-    render() {
-        const { classes } = this.props;
-        const { expanded } = this.state;
-
-        return (
-            <div className={classes.root}>
-                <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
-                    <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography className={classes.heading}>General settings</Typography>
-                        <Typography className={classes.secondaryHeading}>I am an expansion panel</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <Typography>
-                            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-                            maximus est, id dignissim quam.
-                        </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
-                    <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography className={classes.heading}>Users</Typography>
-                        <Typography className={classes.secondaryHeading}>
-                            You are currently not an owner
-                        </Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <Typography>
-                            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-                            diam eros in elit. Pellentesque convallis laoreet laoreet.
-                        </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
-                    <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography className={classes.heading}>Advanced settings</Typography>
-                        <Typography className={classes.secondaryHeading}>
-                            Filtering has been entirely disabled for whole web server
-                        </Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas
-                            eros, vitae egestas augue. Duis vel est augue.
-                        </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
-                    <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography className={classes.heading}>Personal data</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas
-                            eros, vitae egestas augue. Duis vel est augue.
-                        </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-            </div>
-        );
-    }
+  return (
+    <div className={classes.root}>
+      <Grid container spacing={0}>
+        {items.map((item,index) =>{
+          if (item.photo === "graduation"){
+            item.photoURL = graduation
+          }
+          if (item.photo === "outdoors"){
+            item.photoURL = outdoors
+          }
+          return(
+            <Grid className={classes.row} item xs={12} key={index}>
+                {index % 2 === 0 ?
+                  (
+                    <Grid className={classes.flex} container spacing={0}>
+                      <Grid className={classes.text} item xs={6}>
+                        {item.text}
+                      </Grid>
+                      <Grid item xs={6}>
+                        <img src={item.photoURL} alt="..." className={classes.img} />
+                      </Grid>
+                    </Grid>
+                  ):
+                  (
+                    <Grid className={classes.flex} container spacing={0}>
+                      <Grid item xs={6}>
+                        <img src={item.photoURL} alt="..." className={classes.img} />
+                      </Grid>
+                      <Grid className={classes.text} item xs={6}>
+                        {item.text}
+                      </Grid>
+                    </Grid>
+                  )
+                }
+            </Grid>
+            )})}
+      </Grid>
+    </div>
+  );
 }
 
 About.propTypes = {
-    classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(About);

@@ -1,32 +1,32 @@
 {
-  "projects": {
-
-  },
+  "projects": [
+    {
+      "title": "PDFaaS",
+      "description": "Severless stack build with AWS SAM. Provides the generation of PDFs and Images using Google's Puppeteer library running on AWS Lambda",
+      "repo_url": "https://github.com/JacobSolomonUCF/PDFaaS",
+      "icon": "file-pdf"
+    },
+    {
+      "title": "Louie Facts",
+      "description": "Amazon Alexa skill that provide various information about my dog Louie. Built on AWS Lambda using AWS SAM.",
+      "repo_url": "https://github.com/JacobSolomonUCF/alexaSkill",
+      "icon": "microphone"
+    },
+    {
+      "title": "ReportGen",
+      "description": "Home Inspection focused document builder and report generation tool that is currently still in the development phase. Built with ReactJS using ExpressJS along with Google's Puppeteer for media generation",
+      "icon": "file-invoice"
+    },
+    {
+      "title": "Oviedo Fire Department Inventory Reporting System",
+      "description": "UCF Senior Design Project. Complete inventory reporting tool that featured native iOS & Android applications paired with an Angular2 web application built on the Google Cloud",
+      "repo_url": "https://github.com/JacobSolomonUCF/OviedoFireSD",
+      "icon": "fire"
+    }
+  ],
   "experience": [
     {
-      "company": "Publix Supermarkets",
-      "title": "Grocery Replenishment Specialist",
-      "start_date": "October 2011",
-      "end_date": "January 2017",
-      "task": [
-        "Analyzed stock orders to manage inventory levels",
-        "Helped with weekly sales forecasting and display planning",
-        "Was responsible for training new employees"
-      ]
-    },
-    {
       "company": "Siemens Energy",
-      "title": "Data Analyst",
-      "start_date": "January 2017",
-      "end_date": "March 2018",
-      "task": [
-        "Created custom interactive Tableau workbooks leveraging multiple database connections",
-        "Developed & maintained regional SharePoint site",
-        "Was responsible for IAM management for regional resources"
-      ]
-    },
-    {
-      "company": "Publix Supermarkets",
       "title": "Full Stack Developer",
       "start_date": "March 2018",
       "end_date": "Present",
@@ -36,11 +36,42 @@
         "Reduced infrastructure cost by leveraging the latest in serverless technology",
         "Participated in IAM Administration and customer onboarding for the suite"
       ]
+    },{
+      "company": "Siemens Energy",
+      "title": "Data Analyst",
+      "start_date": "January 2017",
+      "end_date": "March 2018",
+      "task": [
+        "Created custom interactive Tableau workbooks leveraging multiple database connections",
+        "Developed & maintained regional SharePoint site",
+        "Was responsible for IAM management for regional resources"
+      ]
+    },{
+      "company": "Publix Supermarkets",
+      "title": "Grocery Replenishment Specialist",
+      "start_date": "October 2011",
+      "end_date": "January 2017",
+      "task": [
+        "Analyzed stock orders to manage inventory levels",
+        "Helped with weekly sales forecasting and display planning",
+        "Was responsible for training new employees"
+      ]
     }
   ],
   "about": {
     "github": "https://github.com/JacobSolomonUCF",
-    "linkedin": "https://www.linkedin.com/in/jacob-solomon-a81a7912b/"
+    "linkedin": "https://www.linkedin.com/in/jacob-solomon-a81a7912b/",
+    "summary": "Hi, I develop Web Applications. Currently employed by Siemens Energy, where I'm focused on solving complex problems with the best technical solutions.",
+    "info": [
+      {
+        "text": "When I'm not developing, I love spending time with my girlfriend Amber, and our dog Louie.",
+        "photo": "graduation"
+      },
+      {
+        "text": "Being born & raised in Central Florida, I have always enjoyed being outdoors.",
+        "photo": "outdoors"
+      }
+    ]
 
   }
 }

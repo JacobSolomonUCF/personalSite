@@ -2,11 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFileInvoice, faFire, faMicrophone, faFilePdf, faFile } from '@fortawesome/free-solid-svg-icons';
+import ProfilePage from "./Profile.jsx";
+
 
 import "./assets/scss/material-kit-react.scss?v=1.4.0";
 
-// pages for this product
-import ProfilePage from "./views/Profile/Profile.jsx";
+library.add(faFileInvoice, faFire, faMicrophone, faFilePdf, faFile);
+
 
 var hist = createBrowserHistory();
 
