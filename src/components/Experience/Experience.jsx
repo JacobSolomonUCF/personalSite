@@ -38,6 +38,11 @@ const styles = theme => ({
         paddingBottom: 0,
         paddingLeft: '10px',
     },
+    bulletContainer:{
+        position: 'absolute',
+        left: 0,
+        top: '1px',
+    },
     bullet:{
         fontSize: theme.typography.pxToRem(10),
         padding: '2px',
@@ -86,7 +91,9 @@ class Experience extends React.Component {
                                                 <List dense={true}>
                                                     {item.task.map((x,index) => (
                                                         <ListItem className={classes.item} key={index}>
-                                                            <PanoramaFishEye className={classes.bullet}/>
+                                                            <div className={classes.bulletContainer}>
+                                                                <PanoramaFishEye className={classes.bullet}/>
+                                                            </div>
                                                             <span className={classes.text}>{x}</span>
                                                         </ListItem>
                                                     ))}
