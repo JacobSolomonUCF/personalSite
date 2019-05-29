@@ -31,10 +31,11 @@
       "start_date": "March 2018",
       "end_date": "Present",
       "task": [
-        "Developed multiple B2B applications using EmberJS/Flask",
-        "Helped architect & implement various microservices consumed by a suite of applications",
-        "Reduced infrastructure cost by leveraging the latest in serverless technology",
-        "Participated in IAM Administration and customer onboarding for the suite"
+        "Led implementation and development of key improvements to a inhouse Enterprise CMS (built using Ember JS / Python) resulting in major improvements in content editing & usability",
+        "Designed and developed serverless architecture (for both Python & NodeJS microservices) resulting in over 90% reduction in existing infrastructure cost",
+        "Collaborated across multiple teams / projects using different technologies like Python, NodeJS, EmberJS, React",
+        "Drove IAM (AuthN & AuthZ) implementations utilizing JWT tokens for Single Sign On across a suite of applications",
+        "Coordinated closely with Product Managers to understand value proposition of development pipeline to customers and provide guidance on technical complexity and risk to help streamline release and iteration planning"
       ]
     },{
       "company": "Siemens Energy",
