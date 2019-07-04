@@ -39,7 +39,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "aws s3 sync build/ s3://jacobsolomon.dev --profile personal"
+    "deploy": "aws s3 sync build/ s3://jacobsolomon.dev --profile personal",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id EK5FWHL7K1WK  --paths \"/*\" --profile personal"
   },
   "browserslist": [
     ">0.2%",
