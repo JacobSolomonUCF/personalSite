@@ -65,6 +65,7 @@ const styles = theme => ({
         color: '#3d5a80',
     },
     siteURL:{
+        color: '#3d5a80',
         marginRight: "10px"
     },
     private:{
