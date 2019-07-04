@@ -28,7 +28,9 @@ const styles = theme => ({
     cover: {
         width: '100px !important',
         height: '100px',
-        margin: 'auto',
+        marginTop: 'auto',
+        marginBottom: 'auto',
+        marginLeft: '15px',
         borderRadius: '4px',
         color: '#3d5a80',
     },
@@ -62,6 +64,9 @@ const styles = theme => ({
     link:{
         color: '#3d5a80',
     },
+    siteURL:{
+        marginRight: "10px"
+    },
     private:{
         color: '#000',
     }
@@ -85,7 +90,16 @@ function Project(props) {
                             </Typography>
                             <div className={classes.repo}>
                                 {item.repo_url ?
-                                    (<a className={classes.link} href={item.repo_url}>Public Repo</a>):
+                                    (
+                                      <div>
+                                          {item.site_url ?
+                                            (
+                                              <a className={classes.siteURL} href={item.site_url}>Project URL</a>
+                                            ):('')
+                                          }
+                                          <a className={classes.link} href={item.repo_url}>Public Repo</a>
+                                      </div>
+                                    ):
                                     (<span className={classes.private}>Private Repo</span>)
                                 }
                             </div>

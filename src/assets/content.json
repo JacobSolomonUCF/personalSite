@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "title": "50 Years of Storms",
+      "description": "(1964-2015) Atlantic hurricane data presented in a interactive way. Utilizes AWS Lambda, API Gateway, DynamoDB, S3 & Cloudfront.",
+      "site_url": "https://50yearsofstorms.com/",
+      "repo_url": "https://github.com/JacobSolomonUCF/50yearsofstorms",
+      "icon": "umbrella"
+    },{
       "title": "PDFaaS",
       "description": "Severless stack build with AWS SAM. Provides the generation of PDFs and Images using Google's Puppeteer library running on AWS Lambda",
       "repo_url": "https://github.com/JacobSolomonUCF/PDFaaS",
