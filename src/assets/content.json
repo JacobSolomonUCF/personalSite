@@ -1,27 +1,24 @@
 {
   "projects": [
     {
+      "title": "Phasmophobia Buddy",
+      "description": "Unofficial companion app for Phasmophobia, an indie online multiplayer horror game",
+      "site_url": "https://phasmophobiabuddy.com/",
+      "repo_url": "https://github.com/JacobSolomonUCF/phasmophobia-buddy",
+      "icon": "ghost"
+    },
+    {
       "title": "50 Years of Storms",
       "description": "(1964-2015) Atlantic hurricane data presented in a interactive way. Utilizes AWS Lambda, API Gateway, DynamoDB, S3 & Cloudfront.",
       "site_url": "https://50yearsofstorms.com/",
       "repo_url": "https://github.com/JacobSolomonUCF/50yearsofstorms",
       "icon": "umbrella"
-    },{
+    },
+    {
       "title": "PDFaaS",
-      "description": "Severless stack build with AWS SAM. Provides the generation of PDFs and Images using Google's Puppeteer library running on AWS Lambda",
+      "description": "Serverless stack build with AWS SAM. Provides the generation of PDFs and Images using Google's Puppeteer library running on AWS Lambda",
       "repo_url": "https://github.com/JacobSolomonUCF/PDFaaS",
       "icon": "file-pdf"
-    },
-    {
-      "title": "Louie Facts",
-      "description": "Amazon Alexa skill that provide various information about my dog Louie. Built on AWS Lambda using AWS SAM.",
-      "repo_url": "https://github.com/JacobSolomonUCF/alexaSkill",
-      "icon": "microphone"
-    },
-    {
-      "title": "ReportGen",
-      "description": "Home Inspection focused document builder and report generation tool that is currently still in the development phase. Built with ReactJS using ExpressJS along with Google's Puppeteer for media generation",
-      "icon": "file-invoice"
     },
     {
       "title": "Oviedo Fire Department Inventory Reporting System",
@@ -32,10 +29,21 @@
   ],
   "experience": [
     {
+      "company": "Crown Castle",
+      "title": "Software Developer",
+      "start_date": "July 2019",
+      "end_date": "Present",
+      "task": [
+        "Led implementation and development of a company-wide internal GIS React Native mobile application",
+        "Assembled a high performance MVT Server using FastAPI",
+        "Worked closely with external partners to develop a proprietary data analytics platform for visualizing crowdsourced big data via Deck.GL"
+      ]
+    },
+    {
       "company": "Siemens Energy",
       "title": "Full Stack Developer",
       "start_date": "March 2018",
-      "end_date": "Present",
+      "end_date": "July 2019",
       "task": [
         "Led implementation and development of key improvements to a inhouse Enterprise CMS (built using Ember JS / Python) resulting in major improvements in content editing & usability",
         "Designed and developed serverless architecture (for both Python & NodeJS microservices) resulting in over 90% reduction in existing infrastructure cost",
@@ -43,7 +51,8 @@
         "Drove IAM (AuthN & AuthZ) implementations utilizing JWT tokens for Single Sign On across a suite of applications",
         "Coordinated closely with Product Managers to understand value proposition of development pipeline to customers and provide guidance on technical complexity and risk to help streamline release and iteration planning"
       ]
-    },{
+    },
+    {
       "company": "Siemens Energy",
       "title": "Data Analyst",
       "start_date": "January 2017",
@@ -53,7 +62,8 @@
         "Developed & maintained regional SharePoint site",
         "Was responsible for IAM management for regional resources"
       ]
-    },{
+    },
+    {
       "company": "Publix Supermarkets",
       "title": "Grocery Replenishment Specialist",
       "start_date": "October 2011",
@@ -68,10 +78,10 @@
   "about": {
     "github": "https://github.com/JacobSolomonUCF",
     "linkedin": "https://www.linkedin.com/in/jacob-solomon-a81a7912b/",
-    "summary": "Hi, I develop Web Applications. Currently employed by Siemens Energy, where I'm focused on solving complex problems with the best technical solutions.",
+    "summary": "Hi, I like to build things! Currently employed by Crown Castle, where I'm focused on solving complex problems with the best technical solutions.",
     "info": [
       {
-        "text": "When I'm not developing, I love spending time with my girlfriend Amber, and our dog Louie.",
+        "text": "When I'm not developing, I love spending time with my fiancée Amber, and our dog Louie.",
         "photo": "graduation"
       },
       {
@@ -79,6 +89,5 @@
         "photo": "outdoors"
       }
     ]
-
   }
 }
